@@ -45,7 +45,7 @@ elseif(isset($_GET['prov'])){
 
 
 elseif(isset($_GET['kab'])){
-	$kab=$_GET['kab'];
+	$kab='Kab. '.$_GET['kab'];
 
 	$query="SELECT id FROM kabupaten WHERE nama='$kab'";
 	$result=mysqli_query($link,$query);
